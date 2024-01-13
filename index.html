@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="watch.jpg" class="logo"></a>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Add Cart</a></li>
+    <li><a href="#">Shop now</a></li>
+  </ul>
+  </header>
+  <div class="content">
+    <div class="textbox">
+<h2>Elegance in every tick, our watches redefine time with timeless style<br>Discover <span>
+  precision and sophistication on your wrist</span></h2>
+  <a href="#">Learn More</a>
+  </div>
+  <div class ="imgBox">
+     <img src="watch1.jpg" class="starbucks">
+  </div>
+</div>
+<ul class="thumb">
+  <li><img src ="watch2.jpg" onclick="imgSlider('watch2.jpg')"></li>
+  <li><img src ="watch3.jpg" onclick="imgSlider('watch3.jpg')"></li>
+</ul>
+</section>
+<script type="text/javascript">
+  function imgSlider(anything){
+  document.querySelector('.starbucks').src=anything;
+  }
+  function changeCircleColor(color){
+         const circle=documnet.querySelector('.circle');
+         circle.style.background=color;
+  }
+</script>
+</body>
+</html>
